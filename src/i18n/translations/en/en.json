@@ -1,0 +1,16 @@
+{
+  "common": {},
+  "loginScreen": {
+    "title": "Crypto Currency",
+    "button":"Login",
+    "inputs":{
+      "email": {
+        "label": "Username",
+        "placeholder": "Username"
+      }
+    },
+    "alerts":{
+      "emptyUsername":"Please add the username to login."
+    }
+  }
+}

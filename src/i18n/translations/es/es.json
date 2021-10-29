@@ -1,0 +1,16 @@
+{
+  "common": {},
+  "loginScreen": {
+    "title": "Criptomonedas",
+    "button":"Ingresar",
+    "inputs":{
+      "email": {
+        "label": "Nombre de usuario",
+        "placeholder": "Ingrese nombre de usuario"
+      }
+    },
+    "alerts":{
+      "emptyUsername":"Ingresar usuario para iniciar sesión"
+    }
+  }
+}
