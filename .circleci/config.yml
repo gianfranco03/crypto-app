@@ -86,7 +86,7 @@ jobs:
           working_directory: ios
 
       - run:
-          command: bundle install & bundle clean
+          command: bundle install
           working_directory: ios
 
       - save_cache:
@@ -122,12 +122,12 @@ jobs:
           at: ~/crypto-app
 
       - restore_cache:
-          key: bundle-v1-{{ checksum "Gemfile.lock" }}-{{ arch }}
+          key: bundle-v1-{{ checksum "android/Gemfile.lock" }}-{{ arch }}
 
-      - run: bundle install & bundle clean
+      - run: bundle install
 
       - save_cache:
-          key: bundle-v1-{{ checksum "Gemfile.lock" }}-{{ arch }}
+          key: bundle-v1-{{ checksum "android/Gemfile.lock" }}-{{ arch }}
           paths:
             - vendor/bundle
 
