@@ -106,7 +106,7 @@ jobs:
           path: output/scan
 
   android-build-and-test:
-    working_directory: ~/crypto-app
+    working_directory: ~/crypto-app/android
     docker:
       - image: circleci/android:api-30-node
     steps:
@@ -117,12 +117,12 @@ jobs:
           at: ~/crypto-app
 
       - restore_cache:
-          key: bundle-v1-{{ checksum "android/Gemfile.lock" }}-{{ arch }}
+          key: bundle-v1-{{ checksum "Gemfile.lock" }}-{{ arch }}
 
       - run: bundle install
 
       - save_cache:
-          key: bundle-v1-{{ checksum "android/Gemfile.lock" }}-{{ arch }}
+          key: bundle-v1-{{ checksum "Gemfile.lock" }}-{{ arch }}
           paths:
             - vendor/bundle
 
