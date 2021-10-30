@@ -9,7 +9,7 @@ const storage = new MMKVStorage.Loader().initialize();
 const persistConfig = {
   key: 'root',
   storage: storage,
-  whitelist: ['user'],
+  whitelist: ['user', 'coins'],
 };
 
 const rootReducer = combineReducers({...reducers});

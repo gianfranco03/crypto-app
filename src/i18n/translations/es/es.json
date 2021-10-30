@@ -12,5 +12,18 @@
     "alerts":{
       "emptyUsername":"Ingresar usuario para iniciar sesión"
     }
+  },
+  "homeScreen":{
+    "alerts":{
+      "invalidPercentage":"Ingresar un porcentaje válido."
+    },
+    "listItem":{
+      "rank":"Posición"
+    },
+    "emptyList":"No se encontraron resultados.",
+    "welcome":"Bienvenido",
+    "rakingList":"Clasificación",
+    "inputPlaceholder":"% cambio",
+    "button":"Aceptar"
   }
 }

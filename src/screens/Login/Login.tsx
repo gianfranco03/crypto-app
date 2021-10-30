@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, {useState, useEffect} from 'react';
 import {
   View,
@@ -10,7 +11,7 @@ import {
   Keyboard,
 } from 'react-native';
 import {TextInput, Button} from 'react-native-paper';
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import RNBootSplash from 'react-native-bootsplash';
 
 import i18n from '../../i18n';
@@ -23,8 +24,12 @@ import styles from './Login.styles';
 const LoginScreen: React.FC = ({navigation}: any): JSX.Element => {
   const dispatch = useDispatch();
   const [email, setEmail] = useState<string>('');
+  const userName = useSelector(state => state.user.username);
 
   useEffect(() => {
+    if (userName) {
+      navigation.replace('Main');
+    }
     setTimeout(() => {
       RNBootSplash.hide({fade: true});
     }, 3000);
@@ -39,7 +44,7 @@ const LoginScreen: React.FC = ({navigation}: any): JSX.Element => {
         text: i18n.t('loginScreen.alerts.emptyUsername'),
       });
     } else {
-      dispatch(setUser(email));
+      dispatch(setUser(email.trim()));
       navigation.replace('Main');
     }
   };
