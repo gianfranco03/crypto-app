@@ -25,5 +25,10 @@
     "rakingList":"Ranking List",
     "inputPlaceholder":"% change",
     "button":"Ok"
+  },
+  "detailsScreen":{
+    "title":"Statistic",
+    "requestFinish":"Done",
+    "nextRequest":"Next request in:"
   }
 }

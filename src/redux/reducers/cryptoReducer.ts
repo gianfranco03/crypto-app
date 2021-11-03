@@ -41,9 +41,11 @@ export const coins = (
 };
 
 const coinInit: ICoinState = {
-  data: [],
+  data: {},
   error: null,
   loading: false,
+  stats: [],
+  statsTime: [],
 };
 
 export const coin = (
@@ -59,17 +61,38 @@ export const coin = (
       };
     }
     case actionTypes.GET_COIN_BY_ID_SUCCESS: {
+      const coinData = action.payload[0];
+      const time = new Date();
+
       return {
         ...state,
-        data: action.payload,
+        data: coinData,
+        stats: [...state.stats, Number(coinData.price_usd)],
+        statsTime: [
+          ...state.statsTime,
+          `${time.getHours()}:${time.getMinutes()}`,
+        ],
         error: null,
+        loading: false,
       };
     }
     case actionTypes.GET_COIN_BY_ID_ERROR: {
       return {
         ...state,
-        data: [],
+        data: {},
         error: action.error,
+        loading: false,
+      };
+    }
+    case actionTypes.SET_CURRENT_COIN: {
+      const coinData = action.payload;
+      const time = new Date();
+
+      return {
+        ...state,
+        data: coinData,
+        stats: [Number(coinData.price_usd)],
+        statsTime: [`${time.getHours()}:${time.getMinutes()}`],
       };
     }
     default:

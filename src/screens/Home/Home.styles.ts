@@ -7,16 +7,18 @@ import {
 import typography from '../../lib/constants/typography';
 import colors from '../../lib/constants/colors';
 
+const isIOS = Platform.OS === 'ios';
+
 export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.white,
   },
   content: {
-    paddingTop: Platform.OS === 'ios' ? hp(8) : hp(5),
+    paddingTop: isIOS ? hp(8) : hp(5),
     paddingHorizontal: wp(6),
     backgroundColor: colors.primary,
-    paddingBottom: Platform.OS === 'ios' ? hp(2) : hp(3),
+    paddingBottom: isIOS ? hp(2) : hp(3),
   },
   titleText: {
     fontFamily: typography.fontFamilyRegular,
@@ -62,7 +64,7 @@ export default StyleSheet.create({
   button: {
     borderRadius: wp(5),
     height: hp(4.8),
-    paddingTop: Platform.OS === 'ios' ? hp(0.3) : hp(0),
+    paddingTop: isIOS ? hp(0.3) : hp(0),
     fontFamily: typography.fontFamilyRegular,
   },
   listContainer: {
