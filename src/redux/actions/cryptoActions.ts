@@ -2,6 +2,7 @@ import {API_BASE_URL} from '@env';
 import axios from 'axios';
 
 import * as actionTypes from '../actionTypes';
+import {ICoinData} from '../reducers/types';
 
 export const getAllCoins = () => async (dispatch: any) => {
   dispatch({
@@ -44,3 +45,8 @@ export const getCoinById = (params: any) => async (dispatch: any) => {
     });
   }
 };
+
+export const setCurrentCoin = (coin: ICoinData) => ({
+  type: actionTypes.SET_CURRENT_COIN,
+  payload: coin,
+});

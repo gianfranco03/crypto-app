@@ -41,7 +41,7 @@ export const coins = (
 };
 
 const coinInit: ICoinState = {
-  data: [],
+  data: {},
   error: null,
   loading: false,
 };
@@ -61,15 +61,21 @@ export const coin = (
     case actionTypes.GET_COIN_BY_ID_SUCCESS: {
       return {
         ...state,
-        data: action.payload,
+        data: action.payload[0],
         error: null,
       };
     }
     case actionTypes.GET_COIN_BY_ID_ERROR: {
       return {
         ...state,
-        data: [],
+        data: {},
         error: action.error,
+      };
+    }
+    case actionTypes.SET_CURRENT_COIN: {
+      return {
+        ...state,
+        data: action.payload,
       };
     }
     default:
