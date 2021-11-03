@@ -5,4 +5,5 @@ export default {
   tertiary: '#1A3252',
   white: '#FFFFFF',
   black: '#000000',
+  gray: 'gray',
 };
