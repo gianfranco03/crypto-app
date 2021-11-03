@@ -12,11 +12,13 @@ import {
 } from 'react-native';
 import {TextInput, Button} from 'react-native-paper';
 import {useSelector, useDispatch} from 'react-redux';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import i18n from '../../i18n';
 import showToast from '../../utils/toast';
 
 import {getAllCoins, setCurrentCoin} from '../../redux/actions/cryptoActions';
+import {setUser} from '../../redux/actions/userActions';
 import {ICoinData, IAppState} from '../../redux/reducers/types';
 
 import {NUMBERS_INPUT} from '../../lib/constants/regex';
@@ -30,13 +32,14 @@ const HomeScreen: React.FC = (props: any): JSX.Element => {
 
   const [coins, setCoins] = useState<Array<ICoinData>>([]);
   const [percentage, setPercentage] = useState<any>(null);
+  const [refreshing, setRefreshing] = useState<boolean>(false);
 
   const userName = useSelector((state: IAppState) => state.user.username);
   const {data, loading} = useSelector((state: IAppState) => state.coins);
   const {isConnected} = useSelector((state: IAppState) => state.device);
 
   useEffect(() => {
-    if (!data || !data.length) {
+    if (isConnected || !data || !data.length) {
       dispatch(getAllCoins());
     }
   }, []);
@@ -44,8 +47,18 @@ const HomeScreen: React.FC = (props: any): JSX.Element => {
   useEffect(() => {
     if (data && data.length > 0) {
       setCoins(data);
+      setRefreshing(false);
     }
   }, [data]);
+
+  const onRefresh = (): void => {
+    setRefreshing(true);
+    if (isConnected) {
+      dispatch(getAllCoins());
+    } else {
+      setRefreshing(false);
+    }
+  };
 
   const onSendPercent = (): void => {
     Keyboard.dismiss();
@@ -69,6 +82,11 @@ const HomeScreen: React.FC = (props: any): JSX.Element => {
   const onCoinPress = (coin: ICoinData): void => {
     dispatch(setCurrentCoin(coin));
     navigation.navigate('DetailsScreen');
+  };
+
+  const conLogOut = (): void => {
+    dispatch(setUser(null));
+    navigation.replace('Auth');
   };
 
   const renderItem = ({item}: {item: ICoinData}) => {
@@ -126,6 +144,13 @@ const HomeScreen: React.FC = (props: any): JSX.Element => {
           />
         </View>
       </View>
+      <Ionicons
+        style={styles.leaveIcon}
+        name="log-out-outline"
+        size={30}
+        color={colors.white}
+        onPress={conLogOut}
+      />
       <View style={styles.filterContainer}>
         <Text style={styles.listTitle}>{i18n.t('homeScreen.rakingList')}</Text>
         <View style={styles.filtersContent}>
@@ -149,6 +174,8 @@ const HomeScreen: React.FC = (props: any): JSX.Element => {
       </View>
       <FlatList
         data={coins}
+        refreshing={refreshing}
+        onRefresh={onRefresh}
         renderItem={renderItem}
         keyExtractor={item => item.id}
         style={styles.listContainer}
