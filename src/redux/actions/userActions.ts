@@ -1,12 +1,7 @@
 import * as actionTypes from '../actionTypes';
+import {IActionType} from '../reducers/types';
 
-interface IActions {
-  type: string;
-  payload?: string;
-  error?: any;
-}
-
-export const setUser = (user: string): IActions => ({
+export const setUser = (user: string): IActionType => ({
   type: actionTypes.SET_USERNAME,
   payload: user,
 });

@@ -31,6 +31,14 @@ export default StyleSheet.create({
     fontSize: wp(5),
     color: colors.white,
   },
+  connectionIndicator: {
+    width: wp(2),
+    height: wp(2),
+    borderRadius: wp(1),
+    backgroundColor: colors.gray,
+    marginTop: isIOS ? hp(1.3) : hp(1.6),
+    marginLeft: wp(2),
+  },
   filterContainer: {
     paddingHorizontal: wp(6),
     marginTop: hp(2.5),

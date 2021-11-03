@@ -2,6 +2,7 @@ export interface IAppState {
   coin: ICoinState;
   user: IUserState;
   coins: ICoinsState;
+  device: IDeviceState;
 }
 
 export interface IUserState {
@@ -9,14 +10,18 @@ export interface IUserState {
 }
 export interface IActionType {
   type: string;
-  payload: any;
-  error: any;
+  payload?: any;
+  error?: any;
 }
 
 export interface ICoinsState {
   data: Array<ICoinData>;
   loading: boolean;
   error: any;
+}
+
+export interface IDeviceState {
+  isConnected: boolean | null;
 }
 
 export interface ICoinState {

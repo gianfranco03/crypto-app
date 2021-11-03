@@ -1,5 +1,7 @@
 {
-  "common": {},
+  "common": {
+    "noInternet":"No hay conexión a internet"
+  },
   "loginScreen": {
     "title": "Criptomonedas",
     "button":"Ingresar",
@@ -29,6 +31,7 @@
   "detailsScreen":{
     "title":"Estadísticas",
     "requestFinish":"Finalizado",
+    "noInternet":"No hay conexión a internet",
     "nextRequest":"Siguiente actualización en:"
   }
 }

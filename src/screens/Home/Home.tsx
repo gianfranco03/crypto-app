@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, {useEffect, useState} from 'react';
 import {
@@ -32,6 +33,7 @@ const HomeScreen: React.FC = (props: any): JSX.Element => {
 
   const userName = useSelector((state: IAppState) => state.user.username);
   const {data, loading} = useSelector((state: IAppState) => state.coins);
+  const {isConnected} = useSelector((state: IAppState) => state.device);
 
   useEffect(() => {
     if (!data || !data.length) {
@@ -73,6 +75,7 @@ const HomeScreen: React.FC = (props: any): JSX.Element => {
     return (
       <TouchableOpacity
         style={styles.itemContainer}
+        disabled={!isConnected}
         onPress={() => onCoinPress(item)}>
         <View style={styles.itemLeftBox}>
           <Text style={styles.itemSymbol}>{item.symbol}</Text>
@@ -113,7 +116,15 @@ const HomeScreen: React.FC = (props: any): JSX.Element => {
       <StatusBar backgroundColor={colors.primary} barStyle="light-content" />
       <View style={styles.content}>
         <Text style={styles.titleText}>{i18n.t('homeScreen.welcome')}</Text>
-        <Text style={styles.userText}>{userName}</Text>
+        <View style={{flexDirection: 'row'}}>
+          <Text style={styles.userText}>{userName}</Text>
+          <View
+            style={[
+              styles.connectionIndicator,
+              {backgroundColor: isConnected ? colors.online : colors.gray},
+            ]}
+          />
+        </View>
       </View>
       <View style={styles.filterContainer}>
         <Text style={styles.listTitle}>{i18n.t('homeScreen.rakingList')}</Text>

@@ -61,20 +61,28 @@ export const coin = (
       };
     }
     case actionTypes.GET_COIN_BY_ID_SUCCESS: {
-      const coinData = action.payload[0];
-      const time = new Date();
+      const coinData = action.payload;
 
-      return {
-        ...state,
-        data: coinData,
-        stats: [...state.stats, Number(coinData.price_usd)],
-        statsTime: [
-          ...state.statsTime,
-          `${time.getHours()}:${time.getMinutes()}`,
-        ],
-        error: null,
-        loading: false,
-      };
+      if (coinData?.id) {
+        const time = new Date();
+
+        return {
+          ...state,
+          data: coinData,
+          stats: [...state.stats, Number(coinData.price_usd)],
+          statsTime: [
+            ...state.statsTime,
+            `${time.getHours()}:${time.getMinutes()}`,
+          ],
+          error: null,
+          loading: false,
+        };
+      } else {
+        return {
+          ...state,
+          loading: false,
+        };
+      }
     }
     case actionTypes.GET_COIN_BY_ID_ERROR: {
       return {
@@ -86,14 +94,19 @@ export const coin = (
     }
     case actionTypes.SET_CURRENT_COIN: {
       const coinData = action.payload;
-      const time = new Date();
 
-      return {
-        ...state,
-        data: coinData,
-        stats: [Number(coinData.price_usd)],
-        statsTime: [`${time.getHours()}:${time.getMinutes()}`],
-      };
+      if (coinData?.id) {
+        const time = new Date();
+
+        return {
+          ...state,
+          data: coinData,
+          stats: [Number(coinData.price_usd)],
+          statsTime: [`${time.getHours()}:${time.getMinutes()}`],
+        };
+      } else {
+        return state;
+      }
     }
     default:
       return state;

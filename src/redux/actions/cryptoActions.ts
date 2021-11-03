@@ -36,7 +36,7 @@ export const getCoinById = (coinID: number) => async (dispatch: any) => {
 
     dispatch({
       type: actionTypes.GET_COIN_BY_ID_SUCCESS,
-      payload: response?.data || [],
+      payload: response?.data?.[0] || null,
     });
   } catch (e) {
     dispatch({

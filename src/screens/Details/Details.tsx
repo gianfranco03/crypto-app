@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import {
   View,
   Text,
@@ -34,29 +34,39 @@ const DetailsScreen: React.FC = (props: any): JSX.Element => {
     statsTime,
     loading,
   } = useSelector((state: IAppState) => state.coin);
+  const {isConnected} = useSelector((state: IAppState) => state.device);
 
   const [count, setCount] = useState<number>(0);
 
-  let ticker = 0;
-  let intervalRef: any = null;
+  const ticker = useRef(0);
+  const intervalRef = useRef<any>(null);
 
   useEffect(() => {
     intervalRequest();
 
     return () => {
-      clearInterval(intervalRef);
+      clearInterval(intervalRef.current);
     };
   }, []);
 
+  useEffect(() => {
+    if (!isConnected) {
+      // App goes offline - clear request interval
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+      setCount(intervalTimes);
+    }
+  }, [isConnected]);
+
   const intervalRequest = (): void => {
     // Get the info updated each 30 seconds up to 5 times
-    intervalRef = setInterval(() => {
-      if (ticker < intervalTimes) {
-        ticker = ticker + 1;
+    intervalRef.current = setInterval(() => {
+      if (ticker.current < intervalTimes && isConnected) {
+        ticker.current = ticker.current + 1;
         setCount(prevCount => prevCount + 1);
         dispatch(getCoinById(Number(coin.id)));
       } else {
-        clearInterval(intervalRef);
+        clearInterval(intervalRef.current);
       }
     }, intervalTime);
   };
@@ -129,9 +139,16 @@ const DetailsScreen: React.FC = (props: any): JSX.Element => {
         </View>
         <View style={styles.circleContainer}>
           {intervalTimes === count ? (
-            <Text style={styles.requestText}>
-              {i18n.t('detailsScreen.requestFinish')}
-            </Text>
+            <>
+              <Text style={styles.requestText}>
+                {i18n.t('detailsScreen.requestFinish')}
+              </Text>
+              {!isConnected ? (
+                <Text style={styles.requestText}>
+                  {i18n.t('detailsScreen.noInternet')}
+                </Text>
+              ) : null}
+            </>
           ) : (
             <>
               <Text style={styles.requestCount}>
