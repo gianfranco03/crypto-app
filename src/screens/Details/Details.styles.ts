@@ -1,4 +1,4 @@
-import {StyleSheet, Platform, StatusBar} from 'react-native';
+import {StyleSheet, Platform} from 'react-native';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -13,39 +13,33 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F6FAFF',
-    // backgroundColor: colors.white,
-    paddingTop: isAndroid ? StatusBar.currentHeight + hp(1) : hp(1),
+    paddingTop: isAndroid ? hp(4) : hp(2),
   },
   content: {
     paddingHorizontal: wp(6),
     flex: 1,
-    // backgroundColor: 'white',
   },
   header: {
     flexDirection: 'row',
-    // backgroundColor: 'red',
     alignItems: 'center',
   },
   iconBack: {
     flex: 1,
-    // alignSelf: 'center',
   },
   headerText: {
     fontFamily: typography.fontFamilyBold,
     fontSize: wp(4.5),
     color: colors.black,
-    // marginTop: hp(0.4),
+  },
+  rightBox: {
+    flex: 1,
   },
   coinInfo: {
     marginTop: hp(3),
-    // backgroundColor: 'red',
     paddingHorizontal: wp(2),
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'flex-end',
-    // borderWidth: 1,
-    // borderColor: 'red',
-    // overflow: 'hidden',
   },
   rankContainer: {
     width: wp(14),
@@ -89,5 +83,55 @@ export default StyleSheet.create({
     fontFamily: typography.fontFamily,
     fontSize: wp(3.5),
     color: colors.white,
+  },
+  circleContainer: {
+    alignSelf: 'center',
+    height: hp(20),
+    marginTop: hp(1),
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  requestCount: {
+    fontFamily: typography.fontFamily,
+    fontSize: wp(4.2),
+    color: colors.gray,
+  },
+  requestText: {
+    fontFamily: typography.fontFamily,
+    fontSize: wp(4),
+    color: colors.gray,
+    marginBottom: hp(2),
+  },
+  chartContainer: {
+    backgroundColor: colors.white,
+    paddingBottom: hp(2),
+    paddingHorizontal: wp(2),
+    marginTop: hp(3),
+    borderRadius: wp(4),
+  },
+  chartContent: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  chartInset: {
+    top: hp(1),
+    bottom: hp(1),
+  },
+  lineChart: {
+    width: wp(68),
+    height: hp(40),
+  },
+  xAxis: {
+    marginLeft: wp(8),
+    marginRight: wp(2),
+  },
+  loading: {
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

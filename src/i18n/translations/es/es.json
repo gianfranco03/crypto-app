@@ -25,5 +25,10 @@
     "rakingList":"Clasificación",
     "inputPlaceholder":"% cambio",
     "button":"Aceptar"
+  },
+  "detailsScreen":{
+    "title":"Estadísticas",
+    "requestFinish":"Finalizado",
+    "nextRequest":"Siguiente actualización en:"
   }
 }

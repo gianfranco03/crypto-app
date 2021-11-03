@@ -1,3 +1,12 @@
+export interface IAppState {
+  coin: ICoinState;
+  user: IUserState;
+  coins: ICoinsState;
+}
+
+export interface IUserState {
+  username: null | string;
+}
 export interface IActionType {
   type: string;
   payload: any;
@@ -11,9 +20,11 @@ export interface ICoinsState {
 }
 
 export interface ICoinState {
-  data: ICoinData | object;
+  data: ICoinData | any;
   loading: boolean;
   error: any;
+  stats: Array<number>;
+  statsTime: Array<string>;
 }
 
 export interface ICoinData {

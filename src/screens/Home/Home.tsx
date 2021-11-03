@@ -15,21 +15,23 @@ import {useSelector, useDispatch} from 'react-redux';
 import i18n from '../../i18n';
 import showToast from '../../utils/toast';
 
-import {getAllCoins} from '../../redux/actions/cryptoActions';
+import {getAllCoins, setCurrentCoin} from '../../redux/actions/cryptoActions';
+import {ICoinData, IAppState} from '../../redux/reducers/types';
 
 import {NUMBERS_INPUT} from '../../lib/constants/regex';
 
 import styles from './Home.styles';
 import colors from '../../lib/constants/colors';
 
-const HomeScreen: React.FC = (): JSX.Element => {
+const HomeScreen: React.FC = (props: any): JSX.Element => {
+  const {navigation} = props;
   const dispatch = useDispatch();
 
-  const [coins, setCoins] = useState<Array<any>>([]);
-  const [percentage, setPercentage] = useState<number | null>(null);
+  const [coins, setCoins] = useState<Array<ICoinData>>([]);
+  const [percentage, setPercentage] = useState<any>(null);
 
-  const userName = useSelector(state => state.user.username);
-  const {data, loading} = useSelector(state => state.coins);
+  const userName = useSelector((state: IAppState) => state.user.username);
+  const {data, loading} = useSelector((state: IAppState) => state.coins);
 
   useEffect(() => {
     if (!data || !data.length) {
@@ -62,15 +64,22 @@ const HomeScreen: React.FC = (): JSX.Element => {
     }
   };
 
-  const renderItem = ({item}: any) => {
+  const onCoinPress = (coin: ICoinData): void => {
+    dispatch(setCurrentCoin(coin));
+    navigation.navigate('DetailsScreen');
+  };
+
+  const renderItem = ({item}: {item: ICoinData}) => {
     return (
-      <TouchableOpacity style={styles.itemContainer}>
+      <TouchableOpacity
+        style={styles.itemContainer}
+        onPress={() => onCoinPress(item)}>
         <View style={styles.itemLeftBox}>
           <Text style={styles.itemSymbol}>{item.symbol}</Text>
           <Text style={styles.itemName}>{item.name}</Text>
         </View>
         <View style={styles.itemCenterBox}>
-          <Text style={styles.itemTexts}>% {item.percent_change_24h}</Text>
+          <Text style={styles.itemTexts}>{item.percent_change_24h}%</Text>
         </View>
         <View style={styles.itemRightBox}>
           <Text style={styles.itemTexts}>
