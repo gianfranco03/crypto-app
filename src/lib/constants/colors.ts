@@ -6,4 +6,5 @@ export default {
   white: '#FFFFFF',
   black: '#000000',
   gray: 'gray',
+  online: '#00FF00',
 };

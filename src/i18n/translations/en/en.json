@@ -1,5 +1,7 @@
 {
-  "common": {},
+  "common": {
+    "noInternet":"No internet connection"
+  },
   "loginScreen": {
     "title": "Crypto Currency",
     "button":"Login",
@@ -29,6 +31,7 @@
   "detailsScreen":{
     "title":"Statistic",
     "requestFinish":"Done",
+    "noInternet":"No internet connection",
     "nextRequest":"Next request in:"
   }
 }
