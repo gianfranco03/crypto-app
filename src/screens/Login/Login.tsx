@@ -16,7 +16,9 @@ import RNBootSplash from 'react-native-bootsplash';
 
 import i18n from '../../i18n';
 import showToast from '../../utils/toast';
+
 import {setUser} from '../../redux/actions/userActions';
+import {IAppState} from '../../redux/reducers/types';
 
 import colors from '../../lib/constants/colors';
 import styles from './Login.styles';
@@ -24,7 +26,7 @@ import styles from './Login.styles';
 const LoginScreen: React.FC = ({navigation}: any): JSX.Element => {
   const dispatch = useDispatch();
   const [email, setEmail] = useState<string>('');
-  const userName = useSelector(state => state.user.username);
+  const userName = useSelector((state: IAppState) => state.user.username);
 
   useEffect(() => {
     if (userName) {
@@ -64,7 +66,6 @@ const LoginScreen: React.FC = ({navigation}: any): JSX.Element => {
           <TextInput
             mode="flat"
             keyboardType="email-address"
-            left={<TextInput.Icon name="email" color={colors.primary} />}
             style={styles.inputText}
             label={i18n.t('loginScreen.inputs.email.label')}
             value={email}

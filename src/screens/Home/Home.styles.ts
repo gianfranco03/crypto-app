@@ -39,6 +39,11 @@ export default StyleSheet.create({
     marginTop: isIOS ? hp(1.3) : hp(1.6),
     marginLeft: wp(2),
   },
+  leaveIcon: {
+    position: 'absolute',
+    right: wp(6),
+    marginTop: isIOS ? hp(11) : hp(8),
+  },
   filterContainer: {
     paddingHorizontal: wp(6),
     marginTop: hp(2.5),
