@@ -1,0 +1,37 @@
+{
+  "common": {
+    "noInternet":"No internet connection"
+  },
+  "loginScreen": {
+    "title": "Crypto Currency",
+    "button":"Login",
+    "inputs":{
+      "email": {
+        "label": "Username",
+        "placeholder": "Username"
+      }
+    },
+    "alerts":{
+      "emptyUsername":"Please add the username to login."
+    }
+  },
+  "homeScreen":{
+    "alerts":{
+      "invalidPercentage":"Add a valid percentage."
+    },
+    "listItem":{
+      "rank":"Rank"
+    },
+    "emptyList":"No results found.",
+    "welcome":"Welcome",
+    "rakingList":"Ranking List",
+    "inputPlaceholder":"% change",
+    "button":"Ok"
+  },
+  "detailsScreen":{
+    "title":"Statistic",
+    "requestFinish":"Done",
+    "noInternet":"No internet connection",
+    "nextRequest":"Next request in:"
+  }
+}

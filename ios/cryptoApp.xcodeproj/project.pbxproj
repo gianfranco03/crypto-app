@@ -11,9 +11,24 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		16C95527C3374B098879C4A6 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34D6984191B2401DBC98D440 /* Nunito-Regular.ttf */; };
+		1E694B67E67940DBADB5AB70 /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAC0B481AD9D42A2AF644DCD /* Nunito-BoldItalic.ttf */; };
+		2FCEB6A6A5EB46FEA3FD8040 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6930CF466888465D97E1FA56 /* Nunito-SemiBold.ttf */; };
+		450C12C1336244418C29D01C /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBF2DC776A294609BCF53519 /* Nunito-BlackItalic.ttf */; };
+		46BD0698F3ED440480CF2087 /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 340BE6F6BCB940CFBF76C34B /* Nunito-ExtraBoldItalic.ttf */; };
+		485803C2ECED470C846AF7B6 /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F009FD4FA7E4133882B72E9 /* Nunito-SemiBoldItalic.ttf */; };
+		4D7C696E74754A508FBFACFC /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CD1C25A10604B5B951FBD17 /* Nunito-ExtraLight.ttf */; };
+		5815E77F272BC44500DA01C1 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5815E77E272BC44500DA01C1 /* BootSplash.storyboard */; };
 		6172F2D35A4C3AA820D92908 /* libPods-cryptoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-cryptoApp.a */; };
+		6EDD8705D04045D48AADF088 /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE74686D3794B47A28EFE00 /* Nunito-ExtraLightItalic.ttf */; };
 		7EF68E3733C33B6898317E18 /* libPods-cryptoApp-cryptoAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-cryptoApp-cryptoAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8B9199BC306E4253880AE257 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 938970B8DA7D43ED9B5EBB15 /* Nunito-ExtraBold.ttf */; };
+		C5E22B6F50244A70A20FEEE7 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C6558F6E06F496EA23A3E1B /* Nunito-Bold.ttf */; };
+		D140ED19650242CDA73C4386 /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D599F18ACF4081BCD14556 /* Nunito-Italic.ttf */; };
+		E476CCAA74304B44B71D1588 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AB60CF244FC444DA781C5B6 /* Nunito-Black.ttf */; };
+		F4B58C7CD8404E55A36A0EB1 /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59CB398090DF46D0A20E6789 /* Nunito-LightItalic.ttf */; };
+		FCB6333CE2244B6EB203A4EB /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15A5FCE738294CB18453999D /* Nunito-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +45,51 @@
 		00E356EE1AD99517003FC87E /* cryptoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cryptoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* cryptoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cryptoAppTests.m; sourceTree = "<group>"; };
+		0CD1C25A10604B5B951FBD17 /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-ExtraLight.ttf"; path = "../src/assets/fonts/Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* cryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = cryptoApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = cryptoApp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = cryptoApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = cryptoApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = cryptoApp/main.m; sourceTree = "<group>"; };
+		15A5FCE738294CB18453999D /* Nunito-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Light.ttf"; path = "../src/assets/fonts/Nunito-Light.ttf"; sourceTree = "<group>"; };
+		1C6558F6E06F496EA23A3E1B /* Nunito-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Bold.ttf"; path = "../src/assets/fonts/Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		1D0AE47A65C8663E3B452821 /* Pods-cryptoApp-cryptoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptoApp-cryptoAppTests.release.xcconfig"; path = "Target Support Files/Pods-cryptoApp-cryptoAppTests/Pods-cryptoApp-cryptoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		1D177971F8274946B6173EAB /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		1F009FD4FA7E4133882B72E9 /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		24D599F18ACF4081BCD14556 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Italic.ttf"; path = "../src/assets/fonts/Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		2CC5AABAD27443B6A853DA33 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		31A2EACA9D3A471A997C1CCB /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		340BE6F6BCB940CFBF76C34B /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		3445145F34634483B40893AD /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		34D6984191B2401DBC98D440 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Regular.ttf"; path = "../src/assets/fonts/Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		362F4F94679C47CA9DF9C1EC /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		5815E77E272BC44500DA01C1 /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = cryptoApp/BootSplash.storyboard; sourceTree = "<group>"; };
+		59CB398090DF46D0A20E6789 /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-LightItalic.ttf"; path = "../src/assets/fonts/Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
+		5FFC22355AEA4DB8B20ABFF6 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		61C15E5C6C2141F9A0B5C3FD /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-cryptoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cryptoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6930CF466888465D97E1FA56 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-SemiBold.ttf"; path = "../src/assets/fonts/Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-cryptoApp-cryptoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptoApp-cryptoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-cryptoApp-cryptoAppTests/Pods-cryptoApp-cryptoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AB60CF244FC444DA781C5B6 /* Nunito-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-Black.ttf"; path = "../src/assets/fonts/Nunito-Black.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = cryptoApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BE74686D3794B47A28EFE00 /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		918FF56903874D1D9A13A54B /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		938970B8DA7D43ED9B5EBB15 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-ExtraBold.ttf"; path = "../src/assets/fonts/Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
 		ABFE59519B596E51CEFDCCC0 /* libPods-cryptoApp-cryptoAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cryptoApp-cryptoAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E486CA61DF4F219E22E9AF /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		BAC0B481AD9D42A2AF644DCD /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-BoldItalic.ttf"; path = "../src/assets/fonts/Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BC1334A02628473C953F6CFA /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		BDA5D5388AFA467798432D2B /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		C0A881CF5CF3F2B244570E2A /* Pods-cryptoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptoApp.debug.xcconfig"; path = "Target Support Files/Pods-cryptoApp/Pods-cryptoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C84947D734BF4BABA9246C85 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		C8FDF09E31B94AA2B6E62F95 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		D00AAFFCFCFDA5787532823F /* Pods-cryptoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cryptoApp.release.xcconfig"; path = "Target Support Files/Pods-cryptoApp/Pods-cryptoApp.release.xcconfig"; sourceTree = "<group>"; };
+		EB693F1B153842799D2F10B5 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F2E3FDD785DF47C28A460408 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		FA88F0C30F95414DBFFAE177 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		FBF2DC776A294609BCF53519 /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Nunito-BlackItalic.ttf"; path = "../src/assets/fonts/Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +132,7 @@
 		13B07FAE1A68108700A75B9A /* cryptoApp */ = {
 			isa = PBXGroup;
 			children = (
+				5815E77E272BC44500DA01C1 /* BootSplash.storyboard */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -106,6 +153,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		741C50BC664A4D61A1022D54 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7AB60CF244FC444DA781C5B6 /* Nunito-Black.ttf */,
+				FBF2DC776A294609BCF53519 /* Nunito-BlackItalic.ttf */,
+				1C6558F6E06F496EA23A3E1B /* Nunito-Bold.ttf */,
+				BAC0B481AD9D42A2AF644DCD /* Nunito-BoldItalic.ttf */,
+				938970B8DA7D43ED9B5EBB15 /* Nunito-ExtraBold.ttf */,
+				340BE6F6BCB940CFBF76C34B /* Nunito-ExtraBoldItalic.ttf */,
+				0CD1C25A10604B5B951FBD17 /* Nunito-ExtraLight.ttf */,
+				8BE74686D3794B47A28EFE00 /* Nunito-ExtraLightItalic.ttf */,
+				24D599F18ACF4081BCD14556 /* Nunito-Italic.ttf */,
+				15A5FCE738294CB18453999D /* Nunito-Light.ttf */,
+				59CB398090DF46D0A20E6789 /* Nunito-LightItalic.ttf */,
+				34D6984191B2401DBC98D440 /* Nunito-Regular.ttf */,
+				6930CF466888465D97E1FA56 /* Nunito-SemiBold.ttf */,
+				1F009FD4FA7E4133882B72E9 /* Nunito-SemiBoldItalic.ttf */,
+				FA88F0C30F95414DBFFAE177 /* AntDesign.ttf */,
+				B6E486CA61DF4F219E22E9AF /* Entypo.ttf */,
+				BC1334A02628473C953F6CFA /* EvilIcons.ttf */,
+				C84947D734BF4BABA9246C85 /* Feather.ttf */,
+				5FFC22355AEA4DB8B20ABFF6 /* FontAwesome.ttf */,
+				2CC5AABAD27443B6A853DA33 /* FontAwesome5_Brands.ttf */,
+				31A2EACA9D3A471A997C1CCB /* FontAwesome5_Regular.ttf */,
+				BDA5D5388AFA467798432D2B /* FontAwesome5_Solid.ttf */,
+				F2E3FDD785DF47C28A460408 /* Fontisto.ttf */,
+				C8FDF09E31B94AA2B6E62F95 /* Foundation.ttf */,
+				1D177971F8274946B6173EAB /* Ionicons.ttf */,
+				918FF56903874D1D9A13A54B /* MaterialCommunityIcons.ttf */,
+				3445145F34634483B40893AD /* MaterialIcons.ttf */,
+				EB693F1B153842799D2F10B5 /* Octicons.ttf */,
+				61C15E5C6C2141F9A0B5C3FD /* SimpleLineIcons.ttf */,
+				362F4F94679C47CA9DF9C1EC /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +206,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
+				741C50BC664A4D61A1022D54 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -145,7 +230,6 @@
 				6C97AB639B58BBB4B15BBE30 /* Pods-cryptoApp-cryptoAppTests.debug.xcconfig */,
 				1D0AE47A65C8663E3B452821 /* Pods-cryptoApp-cryptoAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -245,6 +329,21 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				E476CCAA74304B44B71D1588 /* Nunito-Black.ttf in Resources */,
+				450C12C1336244418C29D01C /* Nunito-BlackItalic.ttf in Resources */,
+				C5E22B6F50244A70A20FEEE7 /* Nunito-Bold.ttf in Resources */,
+				1E694B67E67940DBADB5AB70 /* Nunito-BoldItalic.ttf in Resources */,
+				5815E77F272BC44500DA01C1 /* BootSplash.storyboard in Resources */,
+				8B9199BC306E4253880AE257 /* Nunito-ExtraBold.ttf in Resources */,
+				46BD0698F3ED440480CF2087 /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				4D7C696E74754A508FBFACFC /* Nunito-ExtraLight.ttf in Resources */,
+				6EDD8705D04045D48AADF088 /* Nunito-ExtraLightItalic.ttf in Resources */,
+				D140ED19650242CDA73C4386 /* Nunito-Italic.ttf in Resources */,
+				FCB6333CE2244B6EB203A4EB /* Nunito-Light.ttf in Resources */,
+				F4B58C7CD8404E55A36A0EB1 /* Nunito-LightItalic.ttf in Resources */,
+				16C95527C3374B098879C4A6 /* Nunito-Regular.ttf in Resources */,
+				2FCEB6A6A5EB46FEA3FD8040 /* Nunito-SemiBold.ttf in Resources */,
+				485803C2ECED470C846AF7B6 /* Nunito-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,7 +595,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gianfranco.cryptoapp;
 				PRODUCT_NAME = cryptoApp;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -521,7 +620,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gianfranco.cryptoapp;
 				PRODUCT_NAME = cryptoApp;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

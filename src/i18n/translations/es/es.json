@@ -1,0 +1,37 @@
+{
+  "common": {
+    "noInternet":"No hay conexión a internet"
+  },
+  "loginScreen": {
+    "title": "Criptomonedas",
+    "button":"Ingresar",
+    "inputs":{
+      "email": {
+        "label": "Nombre de usuario",
+        "placeholder": "Ingrese nombre de usuario"
+      }
+    },
+    "alerts":{
+      "emptyUsername":"Ingresar usuario para iniciar sesión"
+    }
+  },
+  "homeScreen":{
+    "alerts":{
+      "invalidPercentage":"Ingresar un porcentaje válido."
+    },
+    "listItem":{
+      "rank":"Posición"
+    },
+    "emptyList":"No se encontraron resultados.",
+    "welcome":"Bienvenido",
+    "rakingList":"Clasificación",
+    "inputPlaceholder":"% cambio",
+    "button":"Aceptar"
+  },
+  "detailsScreen":{
+    "title":"Estadísticas",
+    "requestFinish":"Finalizado",
+    "noInternet":"No hay conexión a internet",
+    "nextRequest":"Siguiente actualización en:"
+  }
+}

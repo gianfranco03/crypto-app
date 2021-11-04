@@ -33,6 +33,11 @@ local.properties
 *.iml
 *.hprof
 
+# env
+.env
+.env.development
+.env.production
+
 # node.js
 #
 node_modules/
